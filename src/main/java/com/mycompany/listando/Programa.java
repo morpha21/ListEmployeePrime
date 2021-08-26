@@ -18,8 +18,18 @@ import entities.Employee;
 public class Programa {
 
     public static void main(String[] args) {
+        float x;
+        float y = (float) Prime.count(50);
         
-        System.out.println(Prime.count(11));
+        x = 50/y;
+        
+        System.out.println(y);
+        System.out.println(x);
+//        
+//        for (int i=2; i<= 50; i++){
+//            x = i/Prime.count(i);
+//            System.out.println(x);
+//        }
         
         
         Scanner sc = new Scanner(System.in);
