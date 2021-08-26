@@ -9,7 +9,7 @@ package entities;
  *
  * @author morpha
  */
-public class Prime {
+public class Prime { 
 
     public static boolean check(int prime) {
         int div = 1;
@@ -20,6 +20,16 @@ public class Prime {
             i++;
         }
         return ((div == 1) && (prime != 1));
+    }
+    
+    //returns the amount of prime numbers <= num
+    public static int count(int num){
+        int counting = 0;
+        for (int i=1; i <= num; i++){
+            counting += (check(i)) ? (1): (0);
+        }
+        return counting;
+        
     }
 
 }

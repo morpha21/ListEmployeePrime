@@ -18,6 +18,10 @@ import entities.Employee;
 public class Programa {
 
     public static void main(String[] args) {
+        
+        System.out.println(Prime.count(11));
+        
+        
         Scanner sc = new Scanner(System.in);
         System.out.println("How many employees will be registered?");
         int n = sc.nextInt();
